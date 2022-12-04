@@ -8,10 +8,46 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Paragon</h1>
     <div class="wrapper">
-      <div class="paragon"></div>
-      <div class="formWrapper"></div>
+      <div class="paragon">
+        <h2 class="paragonTitle">DOWÓD ZAKUPU</h1>
+        <h1 class="paragonTitle">BROZOWSKI & BAŃKOWSKI</h1>
+        <p class="sideData">Adres: Lorem Ipsum, 12-345</p>
+        <p class="sideData">tel: +48 606 606 707</p>
+        <div class="paragonContent">
+          <div class="headRow">
+            <h4 class="header">ILOŚĆ</h4>
+            <h4 class="header product">PRODUKT</h4>
+            <h4 class="header">CENA</h4>
+            <h4 class="header">SUMA</h4>
+          </div>
+        </div>
+        <div class="sum">
+          <h3 class="sumHeader">RAZEM:</h3>
+          <h3 id="sumValue"> zł</h3>
+        </div>
+        <h2 style="text-align: center;">DO ZOBACZENIA!</h2>
+      </div>
+      <div class="formWrapper">
+        <form class="form">
+            <div class="formElement">
+
+                <label class="formLabel">Nazwa:</label>
+                <input type="text" />
+            </div>
+            <div class="formElement">
+
+                <label class="formLabel">Ilość:</label>
+                <input type="number" />
+            </div>
+            <div class="formElement">
+
+                <label class="formLabel">Cena:</label>
+                <input type="number" />
+            </div>
+          <button class="submit" type="submit">dodaj</button>
+        </form>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

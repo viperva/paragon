@@ -1,3 +1,109 @@
 body {
-  background-color: beige;
+  background-color: #f9f6ee;
+}
+
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  translate: -50%;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.paragon {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 600px;
+  background-color: aliceblue;
+  filter: drop-shadow(-1px 1px 5px black);
+  font-family: courier;
+}
+
+.sideData {
+  text-align: center;
+  margin: 0;
+}
+
+.headRow {
+  display: flex;
+  width: 100%;
+  border-bottom: black 1px dashed;
+  border-top: black 1px dashed;
+  margin-top: 1rem;
+}
+
+.product {
+  flex-basis: 500px;
+}
+
+.header {
+  padding: 0 1rem;
+}
+
+.paragonTitle {
+  text-align: center;
+}
+
+.sum {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: black 1px dashed;
+}
+
+.paragonContent {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 1rem;
+  border: 2px dashed black;
+}
+
+.formLabel {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.formElement {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  align-items: center;
+}
+
+input {
+  all: unset;
+  width: 350px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+  color: antiquewhite;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
+
+.submit {
+  all: unset;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 2px;
+  color: antiquewhite;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  width: 150px;
+  border: solid 2px black;
+  text-align: center;
+  margin-left: auto;
+}
+
+.submit:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+  color: #f9f6ee;
 }

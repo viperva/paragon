@@ -24,7 +24,7 @@
         </div>
         <div class="sum">
           <h3 class="sumHeader">RAZEM:</h3>
-          <h3 id="sumValue"> zł</h3>
+          <h3 id="sumValue"></h3>
         </div>
         <h2 style="text-align: center;">DO ZOBACZENIA!</h2>
       </div>
@@ -33,17 +33,17 @@
             <div class="formElement">
 
                 <label class="formLabel">Nazwa:</label>
-                <input type="text" />
+                <input id="product" type="text" minlength="3" maxlength="20" required />
             </div>
             <div class="formElement">
 
                 <label class="formLabel">Ilość:</label>
-                <input type="number" />
+                <input id="quantity" type="number" min="1" required />
             </div>
             <div class="formElement">
 
                 <label class="formLabel">Cena:</label>
-                <input type="number" />
+                <input id="price" type="number" step="0.01" min="0.01" required />
             </div>
           <button class="submit" type="submit">dodaj</button>
         </form>

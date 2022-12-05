@@ -20,7 +20,7 @@ body {
   padding: 1rem;
   width: 600px;
   background-color: aliceblue;
-  filter: drop-shadow(-1px 1px 5px black);
+  filter: drop-shadow(0px 0px 5px black);
   font-family: courier;
 }
 
@@ -37,12 +37,15 @@ body {
   margin-top: 1rem;
 }
 
-.product {
-  flex-basis: 500px;
-}
-
 .header {
   padding: 0 1rem;
+  text-align: center;
+  flex-basis: 100px;
+}
+
+.product {
+  flex-basis: 500px;
+  text-align: left;
 }
 
 .paragonTitle {
@@ -53,10 +56,12 @@ body {
   display: flex;
   justify-content: space-between;
   border-bottom: black 1px dashed;
+  border-top: black 1px dashed;
 }
 
 .paragonContent {
   display: flex;
+  flex-direction: column;
 }
 
 .form {
@@ -106,4 +111,9 @@ input {
   background-color: rgba(0, 0, 0, 0.9);
   cursor: pointer;
   color: #f9f6ee;
+}
+
+.row {
+  display: flex;
+  cursor: pointer;
 }

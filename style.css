@@ -94,7 +94,7 @@ input {
   padding: 0.5rem;
 }
 
-.submit {
+.submit, .del, .edit {
   all: unset;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 2px;
@@ -107,7 +107,11 @@ input {
   margin-left: auto;
 }
 
-.submit:hover {
+.del{
+  float: right;
+}
+
+.submit:hover, .del:hover, .edit:hover {
   background-color: rgba(0, 0, 0, 0.9);
   cursor: pointer;
   color: #f9f6ee;

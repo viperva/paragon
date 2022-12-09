@@ -94,7 +94,9 @@ input {
   padding: 0.5rem;
 }
 
-.submit, .del, .edit {
+.submit,
+.del,
+.edit {
   all: unset;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 2px;
@@ -107,11 +109,13 @@ input {
   margin-left: auto;
 }
 
-.del{
+.del {
   float: right;
 }
 
-.submit:hover, .del:hover, .edit:hover {
+.submit:hover,
+.del:hover,
+.edit:hover {
   background-color: rgba(0, 0, 0, 0.9);
   cursor: pointer;
   color: #f9f6ee;
@@ -120,4 +124,11 @@ input {
 .row {
   display: flex;
   cursor: pointer;
+}
+
+.arrows {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 1rem;
 }

@@ -147,9 +147,9 @@ const addItem = (p, ident) => {
   receiptRow.onclick = selectHandler;
 
   editButton.onclick = function editItem() {
-    const index = products.findIndex((product) => product.id == tempId);
+    const index = products.findIndex((product) => product.id == id);
     const editedProduct = {
-      id: tempId,
+      id: id,
       productName: form.product.value,
       quantity: form.quantity.value,
       price: form.price.value,
@@ -158,7 +158,7 @@ const addItem = (p, ident) => {
     console.log(id);
     sum -= products[index].sum;
     sum += editedProduct.sum;
-    products[index] = editedProduct;
+    if (index != -1) products[index] = editedProduct;
     sumElement.textContent = sum + " zł";
     pickedRow.children[0].textContent = editedProduct.quantity;
     pickedRow.children[1].textContent = editedProduct.productName;
@@ -171,7 +171,7 @@ const addItem = (p, ident) => {
   deleteButton.onclick = function deleteItem() {
     let isExecuted = confirm("Czy na pewno chcesz usunąć ten zapis?");
     if (isExecuted == true) {
-      const index = products.findIndex((product) => product.id == tempId);
+      const index = products.findIndex((product) => product.id == id);
       sum -= products[index].sum;
       sumElement.textContent = sum + " zł";
       products.splice(index, 1);
@@ -188,6 +188,7 @@ const addItem = (p, ident) => {
       return;
     }
   };
+
   receiptRow.id = ident;
   list.appendChild(receiptRow);
 
